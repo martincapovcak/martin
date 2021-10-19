@@ -16,7 +16,7 @@
         "capo",
         "martincapo_cli"
     ],
-    "licence": "MIT",
+    "license": "MIT",
     "main": "index.js",
     "repository": "martincapovcak/martincapo_cli",
     "author": {
