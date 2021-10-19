@@ -1,5 +1,5 @@
 {
-    "name": "martin_cli",
+    "name": "martincapo_cli",
     "version": "1.0.0",
     "bin": {
         "martin": "index.js"
