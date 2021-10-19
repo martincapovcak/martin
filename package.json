@@ -1,6 +1,6 @@
 {
     "name": "martincapo_cli",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "description": "Get to know Martin via `npx martincapo_cli`.",
     "bin": {
         "martin": "index.js"
@@ -16,7 +16,7 @@
         "capo",
         "martincapo_cli"
     ],
-    "licence":"MIT",
+    "licence": "MIT",
     "main": "index.js",
     "repository": "martincapovcak/martincapo_cli",
     "author": {
