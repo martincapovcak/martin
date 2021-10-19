@@ -15,5 +15,12 @@
         "capovcak",
         "capo",
         "martincapo_cli"
-    ]
+    ],
+    "licence":"MIT",
+    "main": "index.js",
+    "repository": "martincapovcak/martincapo_cli",
+    "author": {
+        "name": "Martin Capovcak",
+        "email": "martin.capovcak@gmail.com"
+    }
 }
