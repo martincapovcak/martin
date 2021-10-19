@@ -7,5 +7,5 @@
 To use this CLI run the following command:
 
 ```sh
-npx martin
+npx martincapo_cli
 ```
