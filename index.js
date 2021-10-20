@@ -4,12 +4,15 @@ const welcome = require('cli-welcome');
 const chalk = require('chalk');
 const alert = require('bee-alerts');
 const checkNode = require('cli-check-node');
+const unhandled = require('cli-handle-unhandled');
 
 // color styling
 const dim = chalk.dim;
 const italic = chalk.italic;
 const gitHubColor = chalk.hex(`#6cc644`).bold.inverse;
 const linkedInColor = chalk.hex(`#0077b5`).bold.inverse;
+
+unhandled();
 
 welcome({
     title: `Martin Capovcak`,
@@ -23,6 +26,8 @@ welcome({
 });
 
 checkNode('12');
+
+Promise.reject(new Error('THIS_IS_UNHANDLED'));
 
 console.log(`
 ${italic(`Self driven full-stack web developer.
