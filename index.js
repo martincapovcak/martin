@@ -13,6 +13,9 @@ const flags = cli.flags;
 
 (() => {
     init();
+
+    input.includes(`help`) && cli.showHelp(0);
+
     console.log(data.bio);
 
     if(flags.social) {
@@ -24,6 +27,6 @@ const flags = cli.flags;
     };
 
     // Debug info if needed.
-    debug(flags.debug, input, flags);
+    debug(flags.debug, cli);
 
 })();
