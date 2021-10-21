@@ -26,6 +26,10 @@ const options = {
             type: `boolean`,
             default: true,
         },
+        debug: {
+            type: `boolean`,
+            default: false,
+        },
     },
 };
 

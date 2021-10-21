@@ -6,6 +6,7 @@ const handleError = require('cli-handle-error');
 const init = require('./utils/init.js');
 const data = require('./utils/data.js');
 const cli = require('./utils/cli.js');
+const debug = require('./utils/debug.js');
 
 const input = cli.input;
 const flags = cli.flags;
@@ -22,7 +23,7 @@ const flags = cli.flags;
         alert({type: `info`,msg: data.info ,name: `WoHooo`});
     };
 
-    alert({type: `info`,msg:`CLI DATA ⤋`});
-    console.log(`input `, input);
-    console.log(`flags `, flags);
+    // Debug info if needed.
+    debug(flags.debug, input, flags);
+
 })();
