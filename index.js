@@ -12,19 +12,15 @@ const input = cli.input;
 const flags = cli.flags;
 
 (() => {
-    init();
+    init(flags.minimal, flags.clear);
 
     input.includes(`help`) && cli.showHelp(0);
 
-    console.log(data.bio);
+    flags.bio && console.log(data.bio);
 
-    if(flags.social) {
-        console.log(data.social);
-    };
+    flags.social && console.log(data.social);
 
-    if(flags.info){
-        alert({type: `info`,msg: data.info ,name: `WoHooo`});
-    };
+    flags.ad && alert({type: `info`,msg: data.info ,name: `WoHooo`});
 
     // Debug info if needed.
     debug(flags.debug, cli);

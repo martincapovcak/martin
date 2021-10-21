@@ -8,6 +8,5 @@ module.exports = (isDebug, cli) => {
         console.log();
     } else {
         return;
-    }
-    
+    }  
 };
