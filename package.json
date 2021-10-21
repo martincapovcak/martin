@@ -1,6 +1,6 @@
 {
     "name": "martincapo_cli",
-    "version": "2.6.1",
+    "version": "2.7.0",
     "description": "Get to know Martin via `npx martincapo_cli`.",
     "bin": {
         "martin": "index.js"
