@@ -25,7 +25,7 @@ Commands
 
 Examples
     ${green(`npx martincapo_cli --no-social`)}
-    ${green(`npx martincapo_cli --no-info`)}
+    ${green(`npx martincapo_cli --no-ad`)}
     ${green(`npx martincapo_cli help`)}
 
 `;
