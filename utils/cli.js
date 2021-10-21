@@ -1,23 +1,27 @@
 const meow = require('meow');
+const {green, yellow, cyan, bold, dim} = require('chalk');
 
 const helpText = `
 
 Usage
-    npx martincapo_cli [options] <commands>
+    ${green(`npx martincapo_cli`)} ${yellow(`[--options]`)} ${cyan(`<commands>`)}
 
 Options
-    social          Print social contact info
-    --no-social     Don't print the social info
-    info            Prints the info
-    --no-info       Don't print the info
-    -d, --debug     Print debug information
-    -v, --version   Print CLI version
+    ${yellow(`--social`)}        ${dim(`Print social contact info`)}
+    ${yellow(`--no-social`)}     ${dim(`Don't print the social info`)}
+    ${yellow(`--info`)}          ${dim(`Prints the info`)}
+    ${yellow(`--no-info`)}       ${dim(`Don't print the info`)}
+    ${yellow(`-d`)}, ${yellow(`--debug`)}     ${dim(`Print debug information`)}
+    ${yellow(`-v`)}, ${yellow(`--version`)}   ${dim(`Print CLI version`)}
 
 Commands
-    help            Print CLI help informations
+    
+    ${cyan(`help`)}            ${dim(`Print CLI help informations`)}
 
 Examples
-    npx martincapo_cli --no-social
+    ${green(`npx martincapo_cli --no-social`)}
+    ${green(`npx martincapo_cli --no-info`)}
+    ${green(`npx martincapo_cli help`)}
 
 `;
 
