@@ -1,6 +1,7 @@
 const welcome = require('cli-welcome');
 const checkNode = require('cli-check-node');
 const unhandled = require('cli-handle-unhandled');
+const boxen = require('boxen');
 
 const pkgJSON = require('./../package.json');
 
@@ -19,13 +20,15 @@ module.exports = (minimal, clear) => {
             clear
         });
 
-    minimal &&
-        welcome({
-            title: `Martin Capovcak`,
-            version: pkgJSON.version,
-            bgColor: `#FADC00`,
-            clear
-        });
+    minimal && console.log(boxen(`Martin Capovcak`, {
+        padding: 1, 
+        margin: 1,
+        title: `<·^__)~~ =^..^= ~~(__^·>`, 
+        titleAlignment: `center`,
+        textAlignment: "center", 
+        dimBorder: false,
+        borderStyle: `classic`,
+    }))
 
     checkNode('12');
 };
