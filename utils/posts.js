@@ -11,7 +11,7 @@ module.exports = async () => {
         spinner.start(`${yellow(`BLOG`)} fetching..`);
         const res = await fetch(apiURL);
         const data = await res.json();
-        spinner.succeed(`${green(`BLOG`)} fetched!`);
+        spinner.stop();
 
         const posts = data.map(post => {
             return {title: post.title.rendered, link: post.link}
