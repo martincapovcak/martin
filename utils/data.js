@@ -17,10 +17,13 @@ Primarily focused on MERN (MongoDB, Express, React and NodeJS) technologies.
 In passion with bee-keeping.`)}
 `;
 
-const info = `Custom CLIs are fun.`;
+const ad = `Custom CLIs are fun.`;
+
+const blog = `Latest post`;
 
 module.exports = {
     bio,
     social,
-    info
+    ad,
+    blog
 };

@@ -15,7 +15,8 @@
         "cli-welcome": "^2.2.2",
         "log-symbols": "^4.0.0",
         "meow": "^9.0.0",
-        "node-fetch": "^2.6.5"
+        "node-fetch": "^2.6.5",
+        "ora": "^5.4.1"
     },
     "keywords": [
         "martin capovcak",

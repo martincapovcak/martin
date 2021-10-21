@@ -1,15 +1,26 @@
+const ora = require(`ora`);
+const {yellow, green} = require('chalk');
 const fetch = require('node-fetch');
+const handleError = require('cli-handle-error');
 
+const spinner = ora({text: ``});
 const apiURL = `https://api.github.com/users/martincapovcak`;
 
 module.exports = async () => {
-    const res = await fetch(apiURL);
-    const data = await res.json();
-    //console.log(data);
-    const pubRepos = data.public_repos;
 
-    console.log(
-        `Github public projects: ${pubRepos}
-        `
-    );
+    try{
+        spinner.start(`${yellow(`PROJECTS`)} fetching..`);
+        const res = await fetch(apiURL);
+        const data = await res.json();
+        const pubRepos = data.public_repos;
+        spinner.succeed(`${green(`PROJECTS`)} fetched!`);
+        console.log(
+`
+Github public projects: [ ${green(pubRepos)} ]
+`
+        );
+
+    } catch(err){
+        handleError(`API CALL FAILED`, err, false, false);
+    }
 };
