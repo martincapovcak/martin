@@ -19,7 +19,7 @@ In passion with bee-keeping.`)}
 
 const ad = `Custom CLIs are fun.`;
 
-const blog = `Awais latest post ↓`;
+const blog = `Great Awais latest post ↓`;
 
 module.exports = {
     bio,

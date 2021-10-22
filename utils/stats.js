@@ -16,7 +16,7 @@ module.exports = async () => {
         spinner.succeed(`${green(`PROJECTS`)} fetched!`);
         console.log(
 `
-Github public projects: [ ${green(pubRepos)} ]
+My Github public projects: [ ${green(pubRepos)} ]
 `
         );
 
