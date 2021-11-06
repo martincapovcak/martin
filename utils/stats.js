@@ -1,5 +1,5 @@
 const ora = require(`ora`);
-const {yellow, green} = require('chalk');
+const { yellow, green } = require('chalk');
 const fetch = require('node-fetch');
 const handleError = require('cli-handle-error');
 
